@@ -1,0 +1,9 @@
+Feature:This feature tests clickUp API
+
+  Scenario: Create a Folder in ClickUp Space
+    Given I create a Folder
+    And I verify that the name is correct "TestSpace"
+    When I create a new List in the Folder
+    Then In the List I create a Task
+    And I verify that the Task name is correct
+    And I remove the Task from the List
